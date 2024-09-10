@@ -10,7 +10,12 @@ export default function Footer() {
         </p>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <Link to="/thanks">Attributions</Link>
+        <Link
+          to="/thanks"
+          className="hover:underline hover:text-primary"
+        >
+          Attributions
+        </Link>
       </nav>
     </footer>
   );

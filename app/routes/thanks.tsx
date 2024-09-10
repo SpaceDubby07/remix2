@@ -1,17 +1,17 @@
 import { Link } from '@remix-run/react';
-import Footer from '~/components/footer';
-import Hero from '~/components/hero';
 
 export default function Thanks() {
   return (
-    <div className="text-gray-700">
-      <Hero
-        title="Attributions"
-        description="Thank you to all the artists and photographers who create amazing content. Below you will find attributions to these amazing people. "
-        img=""
-      />
-      <div className="max-w-4xl text-center mt-10">
-        <ul>
+    <div className="text-gray-700 h-screen">
+      <Link to="/husky">
+        <button className="mx-auto btn btn-secondary mt-4 ml-4 rounded-full">
+          Back
+        </button>
+      </Link>
+
+      <div className="max-w-4xl text-center mt-10 p-12 ">
+        <h1 className="text-4xl mb-4">Attributions</h1>
+        <ul className="attributions">
           <li>
             <Link to="https://unsplash.com/photos/a-dog-pulling-a-sled-with-two-people-on-it-PsgHfWXjfuc">
               Fredrik Solli Wandem - Home page
@@ -37,7 +37,15 @@ export default function Thanks() {
           </li>
         </ul>
       </div>
-      <Footer />
+
+      <footer className="footer text-xs bg-base-300 items-center p-4 text-gray-700">
+        <aside className="grid-flow-col items-center">
+          <p>
+            Copyright © {new Date().getFullYear()} - Zachary Clark
+            Designs
+          </p>
+        </aside>
+      </footer>
     </div>
   );
 }

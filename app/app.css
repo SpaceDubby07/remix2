@@ -11,6 +11,11 @@
   /* Add transition effects here if needed */
 }
 
+.attributions li a:hover {
+  text-decoration-line: underline;
+  color: #1ebbdb;
+}
+
 #husky-general input {
   cursor: default;
 }

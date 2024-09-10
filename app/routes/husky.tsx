@@ -1,4 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Link } from '@remix-run/react';
 import { useEffect } from 'react';
 import Footer from '~/components/footer';
 import Hero from '~/components/hero';
@@ -149,9 +150,12 @@ export default function Husky() {
           need to understand the commitment that dog ownership
           entails.
         </p>
-        <button className="btn mt-10 hover:scale-110">
-          Learn More
-        </button>
+
+        <Link to="/care#average">
+          <button className="btn mt-10 hover:scale-110">
+            Learn More
+          </button>
+        </Link>
       </section>
 
       {/* General info */}
@@ -177,7 +181,11 @@ export default function Husky() {
           ))}
         </div>
 
-        <button className="btn btn-primary">View all</button>
+        <Link to="/care#traits">
+          <button className="btn btn-primary text-white">
+            See All{' '}
+          </button>
+        </Link>
       </section>
 
       {/* Carousel & Gallery */}
@@ -195,9 +203,12 @@ export default function Husky() {
               they once roamed.
             </p>
           </div>
-          <button className="mt-4 btn btn-secondary">
-            View Gallery
-          </button>
+
+          <Link to="/gallery">
+            <button className="mt-4 btn btn-secondary text-white">
+              View Gallery
+            </button>
+          </Link>
         </div>
       </section>
 
