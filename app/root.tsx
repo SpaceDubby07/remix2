@@ -35,8 +35,11 @@ export default function App() {
           name="viewport"
           content="width=device-width, initial-scale=1"
         />
-        <meta name="description" content="Remix tutorial" />
-        <title>Remix Site 1</title>
+        <meta
+          name="description"
+          content="Remix husky site all about siberian huskies"
+        />
+        <title>Huskies</title>
         {/* Meta component for Remix-managed meta tags */}
         <Meta />
         {/* Links component for Remix-managed link tags */}
